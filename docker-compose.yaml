@@ -1,5 +1,13 @@
 version: '3.8'
 services:
+
+  mongo:
+    container_name: db_monggo
+    image: mongo:latest
+    restart: unless-stopped
+    ports:
+     - "27017:27017"
+
   api:
     container_name: api
     build: ./api
