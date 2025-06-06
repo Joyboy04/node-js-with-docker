@@ -5,8 +5,8 @@
   "scripts": {
     "start:dev": "nodemon --env-file=.env.development src/index.js",
     "docker:build": "docker build -t belajar-nodejs:latest .",
-    "docker:run": "docker run belajar-nodejs:latest",
-    "docker:stop": ""
+    "docker:run": "docker run -p 3000:3000 -v %cd%:/user/src/app --name api belajar-nodejs:latest",
+    "docker:stop": "docker stop api"
   },
   "keywords": [],
   "author": "Raihan",
