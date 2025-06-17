@@ -1,23 +1,22 @@
-import express from 'express';
-import config from './config.js';
+import express from "express";
+import config from "./config.js"; 
+import { initializeApp } from "./initializers/index.js";
 
-export const startServer = () => {
-
-    const httpServer = express();
+export const startServer = async () => {
+    
+    const app = express();
     const port = config.port;
 
-    httpServer.get('/ping', (req, res) => {
-        console.log('-ping route:', req.url, Date.now());
-        res.status(200).json({
-            Message: 'pong - test successful',
-        })
-    })
-
+    await initializeApp(app, config);
+    
     try {
-        httpServer.listen(port, () => {
-            console.log('server started on port', port);
+
+        app.listen(port, () => {
+            console.log(`\n 🚀 Server running on port ${port}`);
         });
+
     } catch(err) {
-        throw new Error('Error starting server: ${err}');
-    }
+        throw new Error(err)
+    };
+
 }
