@@ -1,7 +1,3 @@
-# Node, Docker & MongoDB Course
-
-Welcome to the codebase for the Node, Docker & MongoDB course! This folder contains the starter code and completed project for you to follow along and practice the advanced concepts taught in the course.
-
 ## Getting Started
 
 Follow these instructions to get the project up and running on your local machine for development and testing purposes.
@@ -41,14 +37,3 @@ docker compose up
 
 
 This will start the Node.js application using the settings defined in your environment configuration.
-
-## Exploring Further
-
-This course is designed to provide you with hands-on experience and in-depth understanding of building professional-grade applications using Node, Docker, and MongoDB. If you wish to explore more topics and projects, visit my website:
-
-[Dev Shack Coding Academy](https://academy.devshack.tech)
-
-Here you'll find additional resources, tutorials, and more courses to further your learning journey.
-
-Happy coding!
-
