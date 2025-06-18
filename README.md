@@ -46,6 +46,7 @@ This will start the Node.js application using the settings defined in your envir
 
 This course is designed to provide you with hands-on experience and in-depth understanding of building professional-grade applications using Node, Docker, and MongoDB. If you wish to explore more topics and projects, visit my website:
 
+[Dev Shack Coding Academy](https://academy.devshack.tech)
 
 Here you'll find additional resources, tutorials, and more courses to further your learning journey.
 

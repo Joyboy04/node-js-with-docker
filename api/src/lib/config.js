@@ -12,7 +12,8 @@ export default {
      * Switch routes on/off
      */
     routes: {
-        default: true
+        default: true,
+        user: true
     },
 
     mongo: {
